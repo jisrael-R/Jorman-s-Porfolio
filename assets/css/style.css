@@ -15,6 +15,30 @@ body{
     line-height: 1;
     font-size: 16px;
     
+    
+}
+.mobile-menu .container ul  {
+    display: flex;
+    flex-direction: column;
+   justify-content:center;
+   
+   list-style: none;
+   
+   padding: 0 2em 0 2em;
+   background-color:rgb(184, 184, 184) ;
+   height: 50vh;
+   width: 100%;
+   font-size: 6vw;
+   position: fixed;
+   z-index: 999;
+   display: none;
+
+   
+   
+    
+}
+.mobile-menu .container ul li{
+    padding-bottom: 2em;
 }
 /* HEADER SECTION START */
 .m-header{
@@ -52,15 +76,16 @@ main{
 
 .heading h2{
     padding-bottom: 25px;
+    font-size: 5.5vw;
 }
-.heading h3{
+.m-intro .container .heading h3{
     color:rgba(255,255,255,0.6) ;
     text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 500;
 }
 .upper-case-title{
-    font-size: 8vw;
+    font-size: 8.2vw;
     font-weight: 550;
     margin-bottom: 15px;
    
@@ -93,64 +118,72 @@ main{
 }
 .about-me h1{
     font-family: "Playfair Display";
-    font-size: 7vw;
+    font-size: 9vw;
     font-weight: 400;
     margin-bottom: 20px;
 }
+@keyframes changeColor {
+    0% {
+           background-color: lightgreen;
+         }
+    50% {
+           background-color: rgb(202, 247, 0);
+         }
+    100% {
+           background-color: lightgreen;
+         }
+       
+       
+   }
 .about-me{
-    margin-top: 27rem;
+    margin-top: 33rem;
 }
 .about-me .bold{
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.5;
 }
 .about-me .muted-color{
     color:var(--primary);
     line-height: 2;
+    font-weight: 300;
 }
 .about-me h1 span{
     color:var(--primary); 
 }
 .video{
-    height: 300px;
-    width: 200px;
+    height: 40%;
+    width: 70%;
     position: absolute;
-    top: 30%;
-    right: 12rem;
+    background-color: black;
+    top: 53%;
+    right: 6%;
+    display: flex;
+    justify-content: center;
 }
-@keyframes changeColor {
- 0% {
-        background-color: lightgreen;
-      }
- 50% {
-        background-color: rgb(202, 247, 0);
-      }
- 100% {
-        background-color: lightgreen;
-      }
-    
-    
+video{
+width: 100%;
+
 }
-@media (max-width: 47.99em){
-    .m-intro .basic-info .availability{
-        position: absolute;
-        transform: rotate(270deg);
-        top: 70%;
-        left: -5.00rem;
-    }
-    .m-intro .basic-info .available{
-        position: absolute;
-        transform: rotate(270deg);
-        top: 70%;
-        left: -4.00rem;
-    }
-    .m-intro .basic-info .avail-status{
-        position: absolute;
-       
-        top: 53%;
-        left: 1.00rem;
-    }
+.available{
+    font-size: 11px;
 }
+
+
+.m-intro .basic-info .vert-pose{
+ position: absolute;
+ transform: rotate(270deg);
+ top: 72%;
+ left: -5.00rem;
+}
+.m-intro .basic-info .available{
+ left: -2.3rem;
+ top: 76%;
+}
+ .m-intro .basic-info .avail-status{
+ top: 53%;
+ left: 1.00rem;
+}
+
 
 
 /* ABOUT ME STYLE END */
@@ -158,6 +191,39 @@ main{
 
 
 /* PORFOLIO STYLE START */
+.head .heading{
+    display: flex;
+    justify-content: center;
+    margin: 15rem 1em .5rem 0;
+    font-size: 13vw;
+    position: relative;
+    
+}
+.head .heading .line-design{
+    border-top: 3px solid #fff;
+    width: 7vw;
+    position: absolute;
+    left: 150px;
+    bottom: 20px;
+}
+.head .heading .hfo{
+    font-weight: 500;
+}
+.head .heading .h21{
+    margin-right: .5em;
+    color: var(--primary);
+    font-weight: 325;
+}
+.head{
+   display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+}
+.head .m-text{
+    margin: 0 3.4em 20rem 0;
+    color: var(--primary);
+}
+
 .title-content h2{
     font-family: 'Playfair Display';
     font-weight: 300;
@@ -184,6 +250,22 @@ a{
     text-transform: uppercase;
 }
 /* FOOTER STYLE END */
+@media screen and (min-width: 500px){
+    .m-intro .basic-info .vert-pose{
+        position: static;
+        transform: rotate(270deg);
+        top: 72%;
+        left: -5.00rem;
+       }
+       .m-intro .basic-info .available{
+        left: -2.3rem;
+        top: 76%;
+       }
+        .m-intro .basic-info .avail-status{
+        top: 53%;
+        left: 1.00rem;
+       }
+}
 
 
 @media screen and (min-width: 768px){
