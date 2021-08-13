@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+:root{
+--primary: rgba(255,255,255,0.6);
+}
+
+body{
+    background: #141414;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+    font-size: 16px;
+    
+}
+/* HEADER SECTION START */
+.m-header{
+    padding-top: 2rem;
+}
+main section{
+    margin: 0 .4em 0 .4em;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 1.8em 0 1.8em;
+    
+}
+header p{
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+}
+.email-bigger-frame{
+    display: none;
+}
+header .email-mobile{
+    border-bottom: 1px solid #fff;
+    padding-bottom: .5em;
+}
+
+main{
+    margin: 1em ;
+}
+/* HEADER STYLE END */
+
+
+/* ABOUT ME STYLE START */
+
+.heading h2{
+    padding-bottom: 25px;
+}
+.heading h3{
+    color:rgba(255,255,255,0.6) ;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.upper-case-title{
+    font-size: 8vw;
+    font-weight: 550;
+    margin-bottom: 15px;
+   
+}
+
+.basic-info h4{
+ color:var(--primary);
+ margin-bottom: 15px;
+ font-weight: 500;
+ 
+
+
+}
+.availability{
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 30px;
+    
+}
+.avail-status{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background-color: lightgreen;
+    display:block;
+    
+    animation-name: changeColor;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.about-me h1{
+    font-family: "Playfair Display";
+    font-size: 7vw;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.about-me{
+    margin-top: 27rem;
+}
+.about-me .bold{
+    font-weight: 700;
+    line-height: 1.5;
+}
+.about-me .muted-color{
+    color:var(--primary);
+    line-height: 2;
+}
+.about-me h1 span{
+    color:var(--primary); 
+}
+.video{
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    right: 12rem;
+}
+@keyframes changeColor {
+ 0% {
+        background-color: lightgreen;
+      }
+ 50% {
+        background-color: rgb(202, 247, 0);
+      }
+ 100% {
+        background-color: lightgreen;
+      }
+    
+    
+}
+@media (max-width: 47.99em){
+    .m-intro .basic-info .availability{
+        position: absolute;
+        transform: rotate(270deg);
+        top: 70%;
+        left: -5.00rem;
+    }
+    .m-intro .basic-info .available{
+        position: absolute;
+        transform: rotate(270deg);
+        top: 70%;
+        left: -4.00rem;
+    }
+    .m-intro .basic-info .avail-status{
+        position: absolute;
+       
+        top: 53%;
+        left: 1.00rem;
+    }
+}
+
+
+/* ABOUT ME STYLE END */
+
+
+
+/* PORFOLIO STYLE START */
+.title-content h2{
+    font-family: 'Playfair Display';
+    font-weight: 300;
+}
+.title-content p{
+   color:rgba(255,255,255,0.6);
+}
+/* PORFOLIO STYLE END */
+
+/* FOOTER STYLE SECTION START*/
+.m-footer .mail {
+    font-size: 6.09375vw;
+    color: transparent;
+    -webkit-text-stroke-width: .23438vw;
+    -webkit-text-stroke-color: #fff;
+    /* -webkit-transition: .3s color ease;
+    -o-transition: .3s color ease;
+    transition: .3s color ease; */
+    position: relative;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* FOOTER STYLE END */
+
+
+@media screen and (min-width: 768px){
+    .email-bigger-frame{
+        display: block;
+
+    }
+    .email-mobile{
+        display: none;
+    }
+}
