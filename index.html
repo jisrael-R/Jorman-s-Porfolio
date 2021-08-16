@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Jorman's Porfolio</title>
 </head>
-<body>
-    <div class="mobile-menu">
+<body class="main">
+    <!--  Navigation  Section -->
+    <nav class="mobile-menu">
         <div class="container">
-            <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#folio">Porfolio</a></li>
+
+            <ul id="m-dis">
+                <img id="mobileExit" src="./assets/images/exit.svg" alt="menu close button">
+                <li><a class="close" href="#about">About me</a></li>
+                <li><a  href="#folio">Porfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
    
     <!-- Header section -->
     <header class="m-header">
         <div class="container">
+            <img id="menu-btn" class="btn" src="./assets/images/white-hamburger-menu-icon-24.jpg" alt="Menu Navigation">
             <p>Porfolio Website</p>
             <a class="email-bigger-frame" href="mailto:jorman.iisrael@me.com">Shoot me an Email
 
@@ -36,10 +40,13 @@
         <!-- About me section -->
         <section class="m-intro">
             <div class="container">
+                <div class="js-anime">
+                 <h2 id="Header" ></h2>
+                </div>
                 <div class="heading">
-                    <h2><span>Hi!</span>
-                    <br>my name is Jorman.</h2>
-                    <h3>I'm a Freelance</h3>
+                    
+                   <h2>my name is Jorman.</h2>
+                    <h3>I'm an Independent</h3>
                     
                 </div>
                 <h1 class="upper-case-title">
@@ -48,26 +55,36 @@
                 </h1>
                 <div class="content">
                     <div class="basic-info">
-                        <h4>BASED IN NEW JERSEY,USA</h4>
-                        <span class="availability vert-pose">AVAILABILITY:</span>
-                        <span class="avail-status vert-pose"></span>
-                        <span class="available vert-pose">AVAILABLE 'TIL "YOU HIRE ME"</span>
+                        <h4>BASED IN NEW JERSEY</h4>
+                        <div class="avail-to">
+                            <div class="goes-t">
+                                <span class="availability vert-pose">AVAILABILITY:</span>
+                                <span class="avail-status vert-pose"></span>
+                            </div>
+                            <span class="available vert-pose">AVAILABLE 'TIL "YOU HIRE ME"</span>
+                        </div>
                     </div>
-                   
-                    <div id="about" class="about-me">
-                        <h1>Ab<span>out</span> me</h1>
-                        <p class="bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia veritatis aut voluptates iste assumenda deleniti modi non sequi, a doloribus harum iusto.</p> <br>
+                   <div class="goes-to">
+                        <div id="about" class="about-me">
+                            <h1>Ab<span>out</span> me</h1>
+                            <div class="about-p">
+                                <p class="bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia veritatis aut voluptates iste assumenda deleniti modi non sequi, a doloribus harum iusto.</p> <br>
 
 
-                        <p class="muted-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora alias, aspernatur sunt ab iusto harum, dolorum nobis officia vitae natus dolores laboriosam ipsa dolore odio omnis repellendus minus assumenda mollitia.</p>
-                        <p class="muted-color"> Nostrum exercitationem itaque eligendi voluptatibus magnam repellendus dolore praesentium ullam blanditiis officia quod sapiente quis in unde, ab harum numquam? Nemo, facere.</p>
-                        <p class="muted-color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vitae, id quos asperiores eius delectus accusamus aut fuga fugiat sit, qui quo. Ullam eius dicta, neque totam commodi ipsa illo.</p>
-                    </div>
-                    <div class="video">
-                        <video  autoplay loop muted src="./assets/images/emoji.mp4">
-                            <source src="./assets/images/emoji.mp4"> </video>
+                                <p class="muted-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora alias, aspernatur sunt ab iusto harum, dolorum nobis officia vitae natus dolores laboriosam ipsa dolore odio omnis repellendus minus assumenda mollitia.</p>
+                                <p class="muted-color"> Nostrum exercitationem itaque eligendi voluptatibus magnam repellendus dolore praesentium ullam blanditiis officia quod sapiente quis in unde, ab harum numquam? Nemo, facere.</p>
+                               
+                            </div>
+                        </div>
+                        <div class="video">
+                            <video  autoplay loop muted src="./assets/images/emoji.mp4">
+                                <source src="./assets/images/emoji.mp4"> 
+                                
+                            </video>
+                            
 
-                    </div>
+                        </div>
+                   </div>
                     
                 </div>
             </div>
@@ -86,25 +103,81 @@
                     <p class="m-text">Main Projects</p>
 
                 </div>
+                <!-- Run-Buddy webpage -->
                 <div class="content-inview">
-                    <a class="websites" href="#">
+                    <a class="websites" href="https://jisrael-r.github.io/run-buddy/" target="_blank">
                         <div class="title-content">
-                            <h2>Horiseon</h2>
+                            <h2>RunBuddy</h2>
+                            <p class="p-sm">Webpage</p>
                             <p>HTML-CSS</p>
                         </div>
                         <div class="webpage-vid">
-                            <video src=""></video>
+                            <video class="web-vid" autoplay loop muted src="./assets/images/Run-Buddy vid.mp4">
+                                <source src="./assets/images/Run-Buddy vid.mp4">
+                            </video>
                         </div>
                     </a>
-                    <a class="websites" href="#">
-                        <div class="title-content">
-                            <h2>Run-Buddy</h2>
-                            <p>HTML-CSS</p>
-                        </div>
-                        <div class="webpage-vid">
-                            <video src=""></video>
-                        </div>
-                    </a>
+                    <div class="row">
+                        <!-- Horiseon webpage -->
+                        <a class="websites" href="https://jisrael-r.github.io/Horiseon/" target="_blank">
+                            <div class="title-content">
+                                <h2>Horiseon</h2>
+                                <p class="p-sm">Webpage</p>
+                                <p>HTML-CSS</p>
+                            </div>
+                            <div class="webpage-vid">
+                                <video class="web-vid" autoplay loop muted src="./assets/images/Horiseon.mp4">
+                                    <source src="./assets/images/Horiseon.mp4">
+                                </video>
+                            </div>
+                        </a>
+
+                            <!-- Target webpage-->
+                        <a class="websites" href="https://jisrael-r.github.io/Horiseon/" target="_blank">
+                            <div class="title-content">
+                                <h2>Horiseon</h2>
+                                <p class="p-sm">Webpage</p>
+                                <p>HTML-CSS</p>
+                            </div>
+                            <div class="webpage-vid">
+                                <video class="web-vid" autoplay loop muted src="./assets/images/Horiseon.mp4">
+                                    <source src="./assets/images/Horiseon.mp4">
+                                </video>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                          <!-- Walmart webpage -->
+                        <a class="websites" href="https://jisrael-r.github.io/Horiseon/" target="_blank">
+                            <div class="title-content">
+                                <h2>Horiseon</h2>
+                                <p class="p-sm">Webpage</p>
+                                <p>HTML-CSS</p>
+                            </div>
+                            <div class="webpage-vid">
+                                <video class="web-vid" autoplay loop muted src="./assets/images/Horiseon.mp4">
+                                    <source src="./assets/images/Horiseon.mp4">
+                                </video>
+                            </div>
+                        </a>
+                            <!-- Sears webpage -->
+                        <a class="websites" href="https://jisrael-r.github.io/Horiseon/" target="_blank">
+                            <div class="title-content">
+                                <h2>Horiseon</h2>
+                                <p class="p-sm">Webpage</p>
+                                <p>HTML-CSS</p>
+                            </div>
+                            <div class="webpage-vid">
+                                <video class="web-vid" autoplay loop muted src="./assets/images/Horiseon.mp4">
+                                    <source src="./assets/images/Horiseon.mp4">
+                                </video>
+                            </div>
+                        </a>
+
+                      
+                    </div>
+                    
+              
 
 
                 </div>
@@ -114,26 +187,33 @@
         </section>
         <!-- Page Details -->
         <section class="p-details">
-            <p>WAKE UP</p>
-            <p>KICK ASS</p>
-            <p style="color: rgba(255,255,255,0.6);">REPEAT</p>
+            <p>WAKE UP.</p>
+            <p>KICK ASS.</p>
+            <p style="color: rgba(255,255,255,0.6);">REPEAT.</p>
 
         </section>
        
-        <!-- Social media section -->
-        <section id="contact" class="m-social">
-            <div class="social">
-                <a href="#">GitHub</a>
-            </div>
-            <div class="social">
-                <a href="#">LinkedIn</a>
-            </div>
-            <div class="social">
-                <a href="#">Instagram</a>
-            </div>
-
-        </section>
+        
     </main>
+    <!-- Social media contact section -->
+    <section id="contact" class="m-social">
+        <div class="title">
+            <h2>Con<span class="muted">tact</span> me</h2>
+        </div>
+        <div class="_gli">
+
+            <div class="social social2 social-f">
+                <a href="https://github.com/jisrael-R" target="_blank">GitHub</a>
+            </div>
+            <div class="social social-f">
+                <a href="https://www.linkedin.com/in/jorman-israel-254181213/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="social social3 social-f">
+                <a href="https://instagram.com/israelgtr__?utm_medium=copy_link" target="_blank">Instagram</a>
+        </div>
+        </div>
+
+    </section>
     
     <!-- Footer Section -->
     <footer class="m-footer">
@@ -141,12 +221,12 @@
             <p>say</p>
         <a class="mail" href="mailto:jorman.iisrael@me.com">
             jorman.iisrael@me.com</a>
-        <video src="">
-            <source>
-        </video>
+          <a href="./index.html"><img class="p-pic" src="./assets/images/Jormanbw.jpeg" alt="Jorman's profile picture"></a>
         </div>
 
 
     </footer>
+    <!-- javascipt section -->
+    <script src="index.js"></script>
 </body>
 </html>
