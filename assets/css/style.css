@@ -418,7 +418,10 @@ a{
 
 @media screen and (min-width: 768px){
    
-   
+   .porfolio .head .m-text{
+       margin-right: 6em;
+       font-size: 25px;
+   }
     
     .js-anime{
         position:absolute;
@@ -575,6 +578,10 @@ a{
 }
 
 @media screen and (min-width:1024px) {
+    .porfolio .head .m-text{
+        margin-right: 8em;
+        
+    }
     .about-me .about-p .muted-color,.bold{
         font-size: 1.6vw;
         
